@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    text-transform: capitalize;
+    transition: all .3s linear;
+    background-color: none;
+    outline: none;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-padding-top: 7rem;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #EEE;
+    cursor: grabbing;
+}
+
+.description {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.btn {
+    background-color: rgba(24,114,174);
+    padding: .8rem 2rem;
+    color: #111;
+    cursor: pointer;    
+    font-size: 1.7rem;
+    border-radius: .6rem;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.ui-level {
+    color: transparent;
+    font-size: 9rem;
+    -webkit-text-stroke: .05rem #296e8a;
+    letter-spacing: .2rem;
+    text-align: center;
+    text-transform: uppercase;
+    pointer-events: none;
+    position: relative;
+
+    padding-top: 2rem;
+}
+
+.ui-level span {
+    font-size: 3rem;
+    position: absolute;
+    top: 50%; left: 50%;
+    -webkit-text-stroke: .06rem #222;
+    width: 100%;
+    transform: translate(-50%,-50%);
+}
+
+.description p {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    color: #454545;
+}
+
+.almost-there {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    margin-top: 2rem;
+}
+
+.almost-there h6 {
+    font-size: 5rem;
+}
+
+.game {
+    min-height: 80vh;
+    display: flex;
+    padding: 2rem 9%;
+    align-items: center;
+    justify-content: center;
+}
+.level-one {
+    /* display: none; */
+}
+.level-two {
+    margin-left: 2rem;
+    display: none;
+}
+
+.spooky-picture {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
